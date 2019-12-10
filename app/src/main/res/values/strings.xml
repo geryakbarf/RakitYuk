@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RakitYuk</string>
+    <string name="rakit_pc_impian_dengan_fitur_simulasi">Rakit PC Impian Dengan Fitur Simulasi</string>
+    <string name="ajukan_pertanyaan_di_ruang_diskusi">Ajukan Pertanyaan di Ruang Diskusi</string>
+    <string name="pelajari_cara_merakit_melalui_tutorial">Pelajari Cara Merakit Melalui Tutorial</string>
+    <string name="mulai_merakit_pc_kamu_sendiri_sekarang">Mulai Merakit PC Kamu Sendiri Sekarang!</string>
+    <string name="lewati">Lewati</string>
+    <string name="login">Masuk</string>
+    <string name="signin">MASUK</string>
+    <string name="signup">DAFTAR</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="belum_punya_akun_daftar">Belum Punya Akun ? Daftar</string>
+    <string name="alamat_email">Alamat Email</string>
+    <string name="confirm_password">Masukan Lagi Password</string>
+    <string name="daftar__">Daftar</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
