@@ -1,7 +1,7 @@
 package xyz.geryakbarf.rakityuk.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import xyz.geryakbarf.rakityuk.R
@@ -12,7 +12,8 @@ class SignActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signin)
-        supportActionBar?.hide()
+        supportActionBar?.title = ""
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         loadFragment()
 
     }
@@ -21,7 +22,7 @@ class SignActivity : AppCompatActivity() {
         val t: FragmentManager = supportFragmentManager
         val r : FragmentTransaction = t.beginTransaction()
         val loginFragment = LoginFragment()
-        r?.replace(R.id.fragment, loginFragment)
-        r?.commit()
+        r.replace(R.id.fragment, loginFragment)
+        r.commit()
     }
 }

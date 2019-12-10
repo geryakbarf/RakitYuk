@@ -15,8 +15,7 @@ class RakitFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view : View = inflater.inflate(R.layout.fragment_rakit,container,false)
 
-        return view
+        return inflater.inflate(R.layout.fragment_rakit, container, false)
     }
 }

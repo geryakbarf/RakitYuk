@@ -37,11 +37,11 @@ class WelcomeActivity : AppCompatActivity(),View.OnClickListener {
         btnSkip.visibility = View.INVISIBLE
         btnLogin.setOnClickListener(this)
         btnSkip.setOnClickListener(this)
-        mPager = findViewById<ViewPager>(R.id.pager)
+        mPager = findViewById(R.id.pager)
         mAdapter = PageAdapter(layouts, this)
         mPager.adapter = mAdapter
         // button skip and next
-        dotsLayout = findViewById<LinearLayout>(R.id.dots)
+        dotsLayout = findViewById(R.id.dots)
         createDots(0)
         mPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrollStateChanged(p0: Int) {
@@ -70,13 +70,11 @@ class WelcomeActivity : AppCompatActivity(),View.OnClickListener {
     }
 
     fun createDots(position: Int) {
-        if (dotsLayout != null) {
-            dotsLayout.removeAllViews()
-        }
+        dotsLayout.removeAllViews()
 
-        dots = Array(layouts.size, { i -> ImageView(this) })
+        dots = Array(layouts.size) { ImageView(this) }
 
-        for (i in 0..layouts.size - 1) {
+        for (i in layouts.indices) {
 
             dots[i] = ImageView(this)
 
@@ -96,7 +94,7 @@ class WelcomeActivity : AppCompatActivity(),View.OnClickListener {
                 )
             }
 
-            var params: LinearLayout.LayoutParams = LinearLayout.LayoutParams(
+            val params: LinearLayout.LayoutParams = LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
             )
