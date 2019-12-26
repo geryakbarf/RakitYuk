@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
 
 
         <TextView
@@ -35,7 +37,8 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="KeyboardInaccessibleWidget" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -55,20 +58,22 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"
-                android:src="@drawable/user" />
+                android:src="@drawable/user"
+                tools:ignore="ContentDescription" />
 
             <EditText
                 android:id="@+id/etUsername"
-                android:textColor="@color/colorPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="5dp"
                 android:background="@android:color/white"
                 android:hint="@string/username"
                 android:inputType="textPersonName"
+                android:textColor="@color/colorPrimary"
                 android:textColorHint="@color/colorPrimary"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="Autofill" />
 
         </LinearLayout>
 
@@ -90,21 +95,23 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"
-                android:src="@drawable/key" />
+                android:src="@drawable/key"
+                tools:ignore="ContentDescription" />
 
             <EditText
                 android:id="@+id/etPassword"
-                android:textColor="@color/colorPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="5dp"
                 android:background="@android:color/white"
                 android:hint="@string/password"
                 android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
                 android:textColorHint="@color/colorPrimary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:ignore="Autofill" />
 
         </LinearLayout>
 

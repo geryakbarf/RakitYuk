@@ -18,4 +18,31 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="ruang_diskusi">Ruang Diskusi</string>
+    <string name="motherboard">Motherboard</string>
+    <string name="cpu">CPU</string>
+    <string name="gpu">GPU</string>
+    <string name="ram">RAM</string>
+    <string name="storage">Storage</string>
+    <string name="periferal">Periferal</string>
+    <string name="kabel_jumper">Kabel Jumper</string>
+    <string name="profil">Profil</string>
+    <string name="akun">Akun</string>
+    <string name="simulasi_rakit_pc">Simulasi Rakit PC</string>
+    <string name="tutorial_rakit_pc">Tutorial Rakit PC</string>
+    <string name="penjelasan_hardware">Penjelasan Hardware</string>
+    <string name="menu_rakit_pc">Menu Rakit PC</string>
+    <string name="desc_mobo_2">Dalam sistem komputer, peripheral-peripheral akan saling terkoneksi di dalam motherboard dan dapat meneruskan instruksi melalui jalur-jalur pada board. Seluruh peripheral yang terkoneksi akan menjadi sebuah sistem komputer yang utuh. Sementara fungsi motherboard pada umumnya adalah menghubungkan seluruh komponen penyusun sebuah komputer. Motherboard bisa dikatakan sebagai tulang punggung (backbone) dari sistem komputer, semua komponen komputer pasti terhubung dengan motherboard, baik langsung maupun tidak langsung.</string>
+    <string name="desc_mobo_1">Motherboad adalah papan sirkuit tempat berbagai komponen elektronik saling terhubung seperti pada PC atau Macintosh dan biasa disingkat dengan kata mobo. Pengertian lain dari motherboard atau dengan kata lain mainboard adalah papan utama berupa pcb yang memiliki chip bios (program penggerak), jalur-jalur dan konektor sebagai penghubung akses masing-masing perangkat.</string>
+    <string name="komponen_mobo">Komponen - Komponen Motherboard</string>
+    <string name="desc_mobo_3">1. Soket CPU atau Processor Socket, digunakan untuk menginstal atau menyisipkan prosesor . Ada dua jenis soket  yang kita kenal, yaitu soket LIF soket dan soket  ZIF. LIF singkatan dari Low InsertionForce, yaitu soket model lama, dan ZIF adalah singkatan dari Zero Insertion Force, adalah soket prosesor model baru.</string>
+    <string name="desc_mobo_4">2. North Bridge letaknya selalu dekat dengan soket prosesor, yaitu merupakan salah satu komponen penting dari motherboard. North Bridge adalah titik fokus dari motherboard, dan disebut juga dengan memory controller hub. North bridge terhubung dengan socket Processor, slot RAM serta slot AGP.</string>
+    <string name="desc_mobo_5">3. South Bridge dan North Bridge adalah dua kutub utama motherboard. South Bridge terhubung dengan antarmuka IDE primer dan sekunder, konektor SATA, konektor Floppy Drive, slot PCI dan BIOS.
+</string>
+    <string name="desc_mobo_6">4. Slot RAM adalah komponen pada motherboard yang digunakan untuk menyisipkan RAM. Terdapat beberapa macam slot RAM yaitu SD RAM, DDR1, DDR2, DDR3, dan yang terbaru adalah DDR4</string>
+    <string name="desc_mobo_7">5. Slot AGP digunakan untuk memasukkan AGP Card. AGP atau singkatan dari Accelerated Graphics Port, adalah slot untuk kartu grafis yang ditujukan untuk game 3D. Letaknya selalu di samping slot PCI.</string>
+    <string name="desc_mobo_8">6. Slot PCI digunakan untuk menyisipkan Add-on Card, seperti kartu LAN , Kartu Sound , dan kartu TV tuner .PCI adalah singkatan dari Peripheral Component Interconnect.</string>
+    <string name="desc_mobo_9">7. Complimentary Metal Oxide Semicondutor (CMOS) adalah sebuah baterai yang memasok power pada sebuah memori kecil pada motherboard yang berfungsi untuk menyimpan settingan konfigurasi komputer, waktu, dll. CMOS menjaga agar kita tidak perlu mengkonfigurasi hal-hal tersebut setiap kali kita menyalakan komputer</string>
+    <string name="desc_mobo_10">8. Primary and Secondary IDE Interfaces juga disebut dengan konektor IDE atau konektor PATA. IDE adalah kependekan dari Integrated Device Electronics, yang mendukung untuk perangkat IDE, seperti Hard disk dan CD dan DVD drive .</string>
+    <string name="desc_mobo_11">9. Konektor SATA juga disebut sebagai konektor Serial ATA.  SATA kependekan dari Serial Advanced Technology Attachment, yang berguna untuk menghubungkan perangkat serial ATA.</string>
 </resources>

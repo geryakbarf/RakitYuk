@@ -7,15 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import xyz.geryakbarf.rakityuk.R
 
-
-class RakitFragment : Fragment() {
+class FragmentAkun : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        return inflater.inflate(R.layout.fragment_rakit, container, false)
+        return inflater.inflate(R.layout.fragment_akun, container, false)
     }
+
 }

@@ -1,5 +1,6 @@
 package xyz.geryakbarf.rakityuk.ui
 
+import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -13,8 +14,11 @@ import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_main.*
 import xyz.geryakbarf.rakityuk.R
 import xyz.geryakbarf.rakityuk.utils.PageAdapter
+import xyz.geryakbarf.rakityuk.utils.Session
 
-class WelcomeActivity : AppCompatActivity(),View.OnClickListener {
+class WelcomeActivity : AppCompatActivity(), View.OnClickListener {
+
+    private lateinit var progressDialog: ProgressDialog
 
     private lateinit var mPager: ViewPager
     private lateinit var dotsLayout: LinearLayout
@@ -26,6 +30,7 @@ class WelcomeActivity : AppCompatActivity(),View.OnClickListener {
         R.layout.slide3,
         R.layout.slide4
     )
+    private lateinit var session: Session
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +38,7 @@ class WelcomeActivity : AppCompatActivity(),View.OnClickListener {
         supportActionBar?.hide()
         window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
 
+        session = Session(applicationContext)
         btnLogin.visibility = View.INVISIBLE
         btnSkip.visibility = View.INVISIBLE
         btnLogin.setOnClickListener(this)
@@ -66,7 +72,22 @@ class WelcomeActivity : AppCompatActivity(),View.OnClickListener {
             }
 
         })
+        //Pengecekan Login
+        isFirstime()
 
+    }
+
+    private fun moveActivity() {
+        val intent = Intent(applicationContext, MenuActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    private fun isFirstime() {
+        val isFirstime = session.getValueBoolean("is_firstime")
+        if (isFirstime!!) {
+            moveActivity()
+        }
     }
 
     fun createDots(position: Int) {
@@ -107,13 +128,14 @@ class WelcomeActivity : AppCompatActivity(),View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        when(v!!.id){
-            R.id.btnLogin ->{
-                val intent = Intent(applicationContext,SignActivity::class.java)
+        when (v!!.id) {
+            R.id.btnLogin -> {
+                val intent = Intent(applicationContext, SignActivity::class.java)
                 startActivity(intent)
             }
-            R.id.btnSkip ->{
-                val intent = Intent(applicationContext,MenuActivity::class.java)
+            R.id.btnSkip -> {
+                session.putBoolean("is_firstime", true)
+                val intent = Intent(applicationContext, MenuActivity::class.java)
                 startActivity(intent)
                 finish()
             }
