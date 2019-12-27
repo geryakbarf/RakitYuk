@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -43,7 +47,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        app:cardCornerRadius="3dp"
+        app:cardCornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
@@ -68,6 +72,7 @@
                     android:id="@+id/btnMobo"
                     android:layout_width="0dp"
                     android:layout_height="90dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="16dp"
                     android:layout_weight="1"
                     android:clickable="true"
@@ -144,6 +149,7 @@
                     android:layout_width="0dp"
                     android:layout_height="90dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground">
@@ -182,6 +188,7 @@
                     android:id="@+id/btnPsu"
                     android:layout_width="0dp"
                     android:layout_height="90dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground">
@@ -254,6 +261,7 @@
                     android:id="@+id/btnPeriferal"
                     android:layout_width="0dp"
                     android:layout_height="90dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground">
@@ -282,76 +290,78 @@
     </androidx.cardview.widget.CardView>
 
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:weightSum="2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
-
-        <RelativeLayout
-            android:id="@+id/btnRakit"
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_item"
-            android:clickable="true"
-            android:foreground="?attr/selectableItemBackground">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:weightSum="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
 
-            <ImageView
-                android:id="@+id/imgRakit"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/rakit" />
+            <RelativeLayout
+                android:id="@+id/btnRakit"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_item"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+                <ImageView
+                    android:id="@+id/imgRakit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/rakit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/imgRakit"
+                    android:text="@string/simulasi_rakit_pc"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnTutor"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
                 android:layout_marginStart="5dp"
-                android:layout_toEndOf="@id/imgRakit"
-                android:text="@string/simulasi_rakit_pc"
-                android:textStyle="bold" />
+                android:layout_weight="1"
+                android:background="@drawable/bg_item"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
 
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/imgTutorial"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/youtube" />
 
-        <RelativeLayout
-            android:id="@+id/btnTutor"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_item"
-            android:clickable="true"
-            android:foreground="?attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/imgTutorial"
+                    android:text="@string/tutorial_rakit_pc"
+                    android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/imgTutorial"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/youtube" />
+            </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="5dp"
-                android:layout_toEndOf="@id/imgTutorial"
-                android:text="@string/tutorial_rakit_pc"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
+        </LinearLayout>
 
     <TextView
         android:id="@+id/textView3"
@@ -363,5 +373,6 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

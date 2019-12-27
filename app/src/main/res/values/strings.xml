@@ -25,7 +25,7 @@
     <string name="ram">RAM</string>
     <string name="storage">Storage</string>
     <string name="periferal">Periferal</string>
-    <string name="kabel_jumper">Kabel Jumper</string>
+    <string name="kabel_jumper">Jumper</string>
     <string name="profil">Profil</string>
     <string name="akun">Akun</string>
     <string name="simulasi_rakit_pc">Simulasi Rakit PC</string>
@@ -45,4 +45,38 @@
     <string name="desc_mobo_9">7. Complimentary Metal Oxide Semicondutor (CMOS) adalah sebuah baterai yang memasok power pada sebuah memori kecil pada motherboard yang berfungsi untuk menyimpan settingan konfigurasi komputer, waktu, dll. CMOS menjaga agar kita tidak perlu mengkonfigurasi hal-hal tersebut setiap kali kita menyalakan komputer</string>
     <string name="desc_mobo_10">8. Primary and Secondary IDE Interfaces juga disebut dengan konektor IDE atau konektor PATA. IDE adalah kependekan dari Integrated Device Electronics, yang mendukung untuk perangkat IDE, seperti Hard disk dan CD dan DVD drive .</string>
     <string name="desc_mobo_11">9. Konektor SATA juga disebut sebagai konektor Serial ATA.  SATA kependekan dari Serial Advanced Technology Attachment, yang berguna untuk menghubungkan perangkat serial ATA.</string>
+    <string name="central_processing_unit">Central Processing Unit</string>
+    <string name="desc_cpu_4">Pada dasarnya CPU sendiri memiliki cara kerja yang berpusat terhadap 3 Fungsi dasar yakni menerima masukan (Input), kemudian memproses/mengolah data menjadi keluaran (Output). Jadi, data yang masuk tersebut kemudian di olah oleh CPU menjadi Output yang dapat di simpan baik itu sifatnya sementara atau <permanen class=""></permanen></string>
+    <string name="desc_cpu_3">Maka dari itu, CPU banyak di sebut juga dengan nama processor karena sebagai pengolah pusat dari system computer. Pada sebuah computer, CPU adalah salah satu komponen terpenting dan hampir keseluruhan Operasi Komputer di lakukan Oleh CPU.</string>
+    <string name="desc_cpu_2">Jika di artikan secara umum dari definisi CPU atau Central Processing Unit ialah sebagai otak system computer yang merupakan alat pengolah pusat.</string>
+    <string name="desc_cpu5">Terdapat beberapa jenis Socket CPU dari Intel, diantaranya adalah : \n
+    - LGA 775 \n
+    - LGA 1156 \n
+    - LGA 1155 \n
+    - LGA 1150 \n
+    - LGA 1151</string>
+    <string name="desc_cpu6">Terdapat beberapa jenis Socket CPU dari AMD, diantaranya adalah : \n
+    - AM2 \n
+    - AM3 \n
+    - AM4</string>
+    <string name="desc_cpu_1">CPU ( Central Processing Unit ) adalah yang termasuk dalam ketagori perangkat keras komputer (Hardware) yang mana memiliki tugas sebagai menerima dan melaksanakan berbagai perintah serta data dari perangkat Lunak (Software). Artinya CPU sebagai otak dari Komputer, Sehingga tanpa adanya CPU pada computer tentunya tidak akan berfungsi atau berjalan dengan baik. Dengan kata lain CPU sendiri fungsinya sebagai komponen yang bertugas mengatur jalannya program yang tersimpan di memori utama, dengan cara kerjanya mengambil intruksi lalu mengujinya dan mengekskusi sesuai dengan alur perintah.</string>
+    <string name="fungsi_dan_cara_kerja_cpu">Fungsi dan Cara Kerja CPU</string>
+    <string name="jenis_socket_cpu_intel">Jenis Socket CPU Intel</string>
+    <string name="jenis_socket_cpu_amd">Jenis Socket CPU AMD</string>
+    <string name="graphic_processing_unit">Graphic Processing Unit</string>
+    <string name="desc_gpu_1">Dalam definisinya, Graphic Processing Unit merupakan chip yang dapat di program dan dispesialisasikan untuk keperluan display atau tampilan. GPU akan bertugas untuk melakukan render pada gambar, animasi serta video yang akan ditampilkan pada layar laptop atau desktop Anda. Letaknya tidak jauh dari otak utama komputer yakni CPU dalam motherboard.</string>
+    <string name="desc_gpu_2">Ketika beraktivitas, khususnya saat yang berhubungan dengan display seperti desain grafis atau menonton film serta bermain game online, tentu Anda mendambakan gambar yang halus serta detail. Ini mengapa kemudian GPU banyak disematkan pada perangkat yang memang memiliki kapabilitas untuk memproses dan menampilkan grafis yang baik.</string>
+    <string name="fungsi_gpu">Fungsi GPU</string>
+    <string name="desc_gpu_3">Pertama tentu fungsi utama GPU adalah memproses masukan grafis yang ada, kemudian menampilkannya pada layar monitor dengan kualitas yang tinggi. Hal ini banyak diperlukan oleh pegiat animasi, desain grafis, serta pemain game yang semakin hari semakin menuntut grafis yang lebih baik.</string>
+    <string name="desc_gpu_4">Fungsi GPU yang lain, diluar keperluan grafis, adalah untuk melakukan komputasi pararel pada data yang berjumlah banyak. Jika Anda yang beraktivitas dengan banyak aplikasi non grafis yang memerlukan komputasi berulang dan terus menerus, GPU akan sangat membantu Anda meringankan pekerjaan ini.</string>
+    <string name="random_access">Random Access Memory</string>
+    <string name="desc_ram_1">RAM (Random Access Memory) adalah suatu hardware di dalam komputer yang berfungsi sebagai tempat penyimpanan data sementara (memori) dan berbagai instruksi program.</string>
+    <string name="desc_ram_2">Isi RAM dapat diakses secara acak atau tidak tergantung pengaturan tata letaknya. Data di dalam RAM dapat hilang ketika komputer dinon-aktifkan atau daya listrik ke power supply dicabut dari perangkat.</string>
+    <string name="desc_ram_3">Kapasitas RAM di dalam suatu komputer berpengaruh pada tingkat kecepatan proses data atau loading di komputer tersebut. Sehingga proses penyimpanan data, membuka data, dan menjalankan program, akan semakin cepat sesuai besarnya RAM komputer tersebut.</string>
+    <string name="jenis_jenis_ram">Jenis - Jenis RAM</string>
+    <string name="sdram">1. SDRAM (Synchronous Dynamic Random Access Memory) RAM jenis ini memiliki kemampuan setingkat di atas EDO-RAM. Slot memori untuk SD RAM adalah 168 pin. Bentuk SD RAM adalah Dual Inline Memory Modul (DIMM). Memiliki kecepatan di atas 100 MHz. Biasanya masih banyak dipakai untuk Komputer Pentium 2 dan Pentium 3 dan Komputer Pentium 4 generasi pertama ada yang masih menggunakan jenis RAM ini.</string>
+    <string name="ddr1">2. Doule Data Rate (DDR) RAM (sering disebut DDR1), dengan data transfer 64 bits, DDR SDRAM menggunakan DIMM 184 pin. DDR SDRAM memberikan transfer rate sebesar : memory bus clock rate x 2 x 64 / 8. Jika frekuensi bus 100 MHz, berarti maksimum kecepatan transfer datanya adalah (100x2x64) /8, yaitu 1600 MB perdetik. Diperuntukan untuk Motherboard Pentium 4 generasi kedua dan selanjutnya.</string>
+    <string name="ddr2">3. DDR 2 RAM, Merupakan kelanjutan dari teknologi DDR, SDRAM. Diperkenalkan pertama kali pada kwartal kedua tahun 2003, kemudian pada akhir tahun 2004 DDR2 mulai menggantikan standar DDR1. Tidak seperti DDR, SDRAM, DDR2 menggunakan DIMM 240 pin.</string>
+    <string name="ddr3">4. DDR3 RAM, merupakan pengembangan lanjutan dari DDR2, dimana keuntungan utama dari DDR3 adalah memiliki kemampuan transfer data dua kali lebih cepat dari DDR2. DDR3 mengkonsumsi daya 30% lebih hemat dari DDR2, hanya 1.5 V (DDR2 1.8V, DDR1 2.5 V). Pasokan daya 1.5 V, bekerja dengan baik dengan teknologi 90 nanometer. DDR3 memilik jumlah pin sebanyak 240 pin</string>
+    <string name="ddr4">5. DDR4 diperkenalkan tahun lalu (2014) sebagai penerus DDR3. DDR4 singkatan Double Data Rate Type 4 dan memiliki beberapa kemajuan dan perbaikan atas DDR3. DDR4 mendukung kepadatan memori yang lebih tinggi hingga 16 GB. Frekuensi di mana modul DDR4 tersedia lebih tinggi dari apa yang didukung DDR3 dan nilai-nilai yang tersedia adalah 1600, 1866, 2133, 2400, 2667, 3200 MHz. Konsumsi daya lebih jauh berkurang dengan tegangan spesifikasi 1.2 V. Panjang modul DDR4 yang sama dengan panjang masing-masing modul DDR3, tetapi jumlah pin meningkat. Versi yang digunakan untuk PC memiliki 288 pin.</string>
 </resources>

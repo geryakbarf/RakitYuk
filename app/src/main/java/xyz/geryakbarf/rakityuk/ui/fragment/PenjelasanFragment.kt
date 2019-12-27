@@ -13,11 +13,13 @@ class PenjelasanFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val kode = activity!!.intent.getIntExtra("kode", 0)
-        return if (kode == 0)
-            inflater.inflate(R.layout.fragment_mobo, container, false)
-        else
-            inflater.inflate(R.layout.penjelasan_fragment, container, false)
+        return when (activity!!.intent.getIntExtra("kode", 0)) {
+            0 -> inflater.inflate(R.layout.fragment_mobo, container, false)
+            1 -> inflater.inflate(R.layout.fragment_cpu, container, false)
+            2 -> inflater.inflate(R.layout.fragment_gpu, container, false)
+            3 -> inflater.inflate(R.layout.fragment_ram, container, false)
+            else -> inflater.inflate(R.layout.penjelasan_fragment, container, false)
+        }
     }
 
 }

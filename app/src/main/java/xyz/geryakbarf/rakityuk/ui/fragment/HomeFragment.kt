@@ -32,7 +32,9 @@ class HomeFragment : Fragment(), View.OnClickListener {
         caroselView.setImageListener(imageListener)
         caroselView.pageCount = 3
         btnMobo.setOnClickListener(this)
-
+        btnCpu.setOnClickListener(this)
+        btnGpu.setOnClickListener(this)
+        btnRam.setOnClickListener(this)
     }
 
     private fun moveIntent(kode: Int) {
@@ -44,6 +46,9 @@ class HomeFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.btnMobo -> moveIntent(0)
+            R.id.btnCpu -> moveIntent(1)
+            R.id.btnGpu -> moveIntent(2)
+            R.id.btnRam -> moveIntent(3)
         }
     }
 
