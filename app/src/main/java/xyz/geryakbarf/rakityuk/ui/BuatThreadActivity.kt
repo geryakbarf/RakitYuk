@@ -1,6 +1,7 @@
 package xyz.geryakbarf.rakityuk.ui
 
 import android.app.ProgressDialog
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
@@ -76,8 +77,11 @@ class BuatThreadActivity : AppCompatActivity(), View.OnClickListener {
                     Toast.makeText(applicationContext, response.body()!!.pesan, Toast.LENGTH_SHORT)
                         .show()
                     progressDialog.dismiss()
+                    val intent = Intent(applicationContext, MenuActivity::class.java)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    startActivity(intent)
                     finish()
-                    onBackPressed()
+
                 } else {
                     Toast.makeText(applicationContext, response.body()!!.pesan, Toast.LENGTH_SHORT)
                         .show()

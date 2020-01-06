@@ -6,7 +6,7 @@
     android:layout_marginBottom="8dp">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txtUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/txtJudulThread"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -28,7 +28,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -38,17 +38,17 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/up"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulThread" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/txtJumlahUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginTop="14dp"
         android:text="0"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulThread" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -57,18 +57,18 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/down"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintStart_toEndOf="@+id/txtJumlahUp"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulThread" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/txtJumlahDown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginTop="14dp"
         android:text="0"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulThread" />
 
     <View
         android:id="@+id/view"
@@ -77,8 +77,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="14dp"
         android:background="#dddddd"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintStart_toEndOf="@+id/txtJumlahDown"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulThread" />
 
     <View
         android:layout_width="match_parent"
@@ -99,15 +99,36 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/view"
         app:layout_constraintStart_toEndOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulThread" />
 
     <TextView
+        android:id="@+id/txtJumlahViews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginTop="14dp"
         android:text="115"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulThread" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/comment"
+        app:layout_constraintStart_toEndOf="@+id/txtJumlahViews"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulThread" />
+
+    <TextView
+        android:id="@+id/txtJumlahComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="14dp"
+        android:text="36"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulThread" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

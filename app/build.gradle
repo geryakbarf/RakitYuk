@@ -54,4 +54,5 @@ dependencies {
     implementation 'com.synnapps:carouselview:0.1.4'
     implementation 'com.github.bluejamesbond:textjustify-android:2.1.6'
     implementation 'jp.wasabeef:richeditor-android:1.2.2'
+    implementation 'com.android.volley:volley:1.1.1'
 }
