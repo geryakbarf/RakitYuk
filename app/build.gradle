@@ -53,4 +53,5 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:2.6.0"
     implementation 'com.synnapps:carouselview:0.1.4'
     implementation 'com.github.bluejamesbond:textjustify-android:2.1.6'
+    implementation 'jp.wasabeef:richeditor-android:1.2.2'
 }

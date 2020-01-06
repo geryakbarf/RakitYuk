@@ -10,7 +10,6 @@
     <string name="signup">DAFTAR</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="belum_punya_akun_daftar">Belum Punya Akun ? Daftar</string>
     <string name="alamat_email">Alamat Email</string>
     <string name="confirm_password">Masukan Lagi Password</string>
     <string name="daftar__">Daftar</string>
@@ -19,7 +18,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="ruang_diskusi">Ruang Diskusi</string>
-    <string name="motherboard">Motherboard</string>
+    <string name="motherboard">Mobo</string>
     <string name="cpu">CPU</string>
     <string name="gpu">GPU</string>
     <string name="ram">RAM</string>
@@ -79,4 +78,13 @@
     <string name="ddr2">3. DDR 2 RAM, Merupakan kelanjutan dari teknologi DDR, SDRAM. Diperkenalkan pertama kali pada kwartal kedua tahun 2003, kemudian pada akhir tahun 2004 DDR2 mulai menggantikan standar DDR1. Tidak seperti DDR, SDRAM, DDR2 menggunakan DIMM 240 pin.</string>
     <string name="ddr3">4. DDR3 RAM, merupakan pengembangan lanjutan dari DDR2, dimana keuntungan utama dari DDR3 adalah memiliki kemampuan transfer data dua kali lebih cepat dari DDR2. DDR3 mengkonsumsi daya 30% lebih hemat dari DDR2, hanya 1.5 V (DDR2 1.8V, DDR1 2.5 V). Pasokan daya 1.5 V, bekerja dengan baik dengan teknologi 90 nanometer. DDR3 memilik jumlah pin sebanyak 240 pin</string>
     <string name="ddr4">5. DDR4 diperkenalkan tahun lalu (2014) sebagai penerus DDR3. DDR4 singkatan Double Data Rate Type 4 dan memiliki beberapa kemajuan dan perbaikan atas DDR3. DDR4 mendukung kepadatan memori yang lebih tinggi hingga 16 GB. Frekuensi di mana modul DDR4 tersedia lebih tinggi dari apa yang didukung DDR3 dan nilai-nilai yang tersedia adalah 1600, 1866, 2133, 2400, 2667, 3200 MHz. Konsumsi daya lebih jauh berkurang dengan tegangan spesifikasi 1.2 V. Panjang modul DDR4 yang sama dengan panjang masing-masing modul DDR3, tetapi jumlah pin meningkat. Versi yang digunakan untuk PC memiliki 288 pin.</string>
+    <string name="cari_thread">Cari Thread</string>
+    <string name="buat_thread">Buat Thread</string>
+    <string name="anda_belum_masuk">Anda belum masuk</string>
+    <string name="masuk_untuk_melanjutkan">Masuk untuk melanjutkan</string>
+    <string name="lupa_password">Lupa Password</string>
+    <string name="belum_punya_akun_daftar">Belum Punya Akun ? Daftar</string>
+    <string name="judul_thread">Judul Thread</string>
+    <string name="isi_thread">Isi Thread...</string>
+    <string name="masukan_gambar">Masukan Gambar</string>
 </resources>
