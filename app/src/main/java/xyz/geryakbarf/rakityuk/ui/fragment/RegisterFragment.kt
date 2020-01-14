@@ -32,7 +32,6 @@ class RegisterFragment : Fragment(), View.OnClickListener {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         return inflater.inflate(R.layout.fragment_register, container, false)
     }
 

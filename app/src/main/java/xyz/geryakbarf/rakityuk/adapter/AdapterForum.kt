@@ -1,5 +1,6 @@
 package xyz.geryakbarf.rakityuk.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import xyz.geryakbarf.rakityuk.R
 import xyz.geryakbarf.rakityuk.models.ForumModels
+import xyz.geryakbarf.rakityuk.ui.DetailThreadActivity
 
 class AdapterForum(private val list: ArrayList<ForumModels>) :
     RecyclerView.Adapter<AdapterForum.ViewHolder>() {
@@ -34,6 +36,15 @@ class AdapterForum(private val list: ArrayList<ForumModels>) :
         holder.dislikes.text = dislikes
         holder.comments.text = comments
         holder.views.text = views
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, DetailThreadActivity::class.java)
+            intent.putExtra("idPost", id)
+            intent.putExtra("username", username)
+            intent.putExtra("title", title)
+            intent.putExtra("likes", likes)
+            intent.putExtra("dislikes", dislikes)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

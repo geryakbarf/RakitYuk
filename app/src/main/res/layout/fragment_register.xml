@@ -2,197 +2,158 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-
-        <Button
-            android:id="@+id/btnMasuk"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="100dp"
-            android:background="@drawable/button_border"
-            android:clickable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:text="@string/signin"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/iconpc"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="100dp"
-            android:gravity="center"
-            android:text="@string/signup"
-            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/silahkan_mendaftar_untuk_melanjutkan"
+            android:textColor="@android:color/black"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/btnMasuk"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="36dp"
-            android:layout_marginEnd="26dp"
-            android:background="@drawable/edittext_border"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/mail"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView">
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:src="@drawable/email" />
-
-            <EditText
-                android:id="@+id/etEmail"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:background="@android:color/white"
-                android:hint="@string/alamat_email"
-                android:inputType="textEmailAddress"
-                android:textColor="@color/colorPrimary"
-                android:textColorHint="@color/colorPrimary"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="26dp"
-            android:background="@drawable/edittext_border"
-            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/alamat_email"
+            android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/user"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:src="@drawable/user" />
-
-            <EditText
-                android:id="@+id/etUsername"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:background="@android:color/white"
-                android:hint="@string/username"
-                android:inputType="textPersonName"
-                android:textColor="@color/colorPrimary"
-                android:textColorHint="@color/colorPrimary"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/username"
             android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="26dp"
-            android:background="@drawable/edittext_border"
-            android:orientation="horizontal"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/key"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:src="@drawable/key" />
-
-            <EditText
-                android:id="@+id/etPassword"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:background="@android:color/white"
-                android:hint="@string/password"
-                android:inputType="textPassword"
-                android:textColor="@color/colorPrimary"
-                android:textColorHint="@color/colorPrimary"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout5"
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/password"
             android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="26dp"
-            android:background="@drawable/edittext_border"
-            android:orientation="horizontal"
+            android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/key"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:src="@drawable/key" />
-
-            <EditText
-                android:id="@+id/etKonfirmasi"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:background="@android:color/white"
-                android:hint="@string/confirm_password"
-                android:inputType="textPassword"
-                android:textColor="@color/colorPrimary"
-                android:textColorHint="@color/colorPrimary"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-        </LinearLayout>
+        <EditText
+            android:id="@+id/etKonfirmasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
         <Button
             android:id="@+id/btnDaftar"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
+            android:background="@color/colorPrimary"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="26dp"
-            android:layout_marginBottom="26dp"
-            android:background="@drawable/button"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
             android:text="@string/daftar__"
             android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etKonfirmasi" />
+
+        <TextView
+            android:id="@+id/btnMasuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/sudah_punya_akun_masuk"
+            android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+            app:layout_constraintTop_toBottomOf="@+id/btnDaftar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -87,4 +87,6 @@
     <string name="judul_thread">Judul Thread</string>
     <string name="isi_thread">Isi Thread...</string>
     <string name="masukan_gambar">Masukan Gambar</string>
+    <string name="silahkan_mendaftar_untuk_melanjutkan">Silahkan mendaftar untuk melanjutkan</string>
+    <string name="sudah_punya_akun_masuk">Sudah punya akun ? Masuk</string>
 </resources>

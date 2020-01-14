@@ -1,8 +1,6 @@
 package xyz.geryakbarf.rakityuk.ui
 
 import android.os.Bundle
-import android.os.Handler
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -32,19 +30,4 @@ class MenuActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
-    override fun onBackPressed() {
-        if (isPressed)
-            super.onBackPressed()
-        else {
-            this.isPressed = true
-            Toast.makeText(
-                applicationContext,
-                "Tekan lagi tombol kembali untuk keluar dari aplikasi",
-                Toast.LENGTH_SHORT
-            ).show()
-            Handler().postDelayed({
-                isPressed = false
-            }, 2000)
-        }
-    }
 }

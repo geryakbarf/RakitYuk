@@ -1,12 +1,12 @@
 package xyz.geryakbarf.rakityuk.ui.fragment
 
+import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.RequestQueue
@@ -19,16 +19,19 @@ import xyz.geryakbarf.rakityuk.R
 import xyz.geryakbarf.rakityuk.adapter.AdapterForum
 import xyz.geryakbarf.rakityuk.models.ForumModels
 import xyz.geryakbarf.rakityuk.ui.BuatThreadActivity
+import xyz.geryakbarf.rakityuk.ui.SignActivity
+import xyz.geryakbarf.rakityuk.utils.Server
 import xyz.geryakbarf.rakityuk.utils.Session
 
 class DiskusiFragment : Fragment(), View.OnClickListener, View.OnScrollChangeListener {
 
     private lateinit var session: Session
-    private val url = "https://geryakbarf.000webhostapp.com/get_all_thread.php?page="
+    private val url = Server.url1
     private var count = 1
     private val list: ArrayList<ForumModels> = arrayListOf()
     private lateinit var requestQueue: RequestQueue
     private lateinit var adapterForum: AdapterForum
+    private lateinit var progressBar: ProgressDialog
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,13 +45,17 @@ class DiskusiFragment : Fragment(), View.OnClickListener, View.OnScrollChangeLis
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         session = Session(view.context)
+        progressBar = ProgressDialog(view.context)
+        progressBar.setTitle("Memuat Thread...")
+        progressBar.max = 6
+        progressBar.setCancelable(false)
         fabTambah.setOnClickListener(this)
         requestQueue = Volley.newRequestQueue(context)
         rvThread.setHasFixedSize(true)
         rvThread.layoutManager = LinearLayoutManager(context)
         rvThread.setOnScrollChangeListener(this)
         getData()
-        progressBarForum.visibility = View.VISIBLE
+        progressBar.show()
         adapterForum = AdapterForum(list)
         rvThread.adapter = adapterForum
     }
@@ -60,10 +67,9 @@ class DiskusiFragment : Fragment(), View.OnClickListener, View.OnScrollChangeLis
                     val intent = Intent(context, BuatThreadActivity::class.java)
                     context!!.startActivity(intent)
                 } else {
-                    val t: FragmentTransaction = this.fragmentManager!!.beginTransaction()
-                    val fragment = LoginFragment()
-                    t.replace(R.id.nav_host_fragment, fragment)
-                    t.commit()
+                    val intent = Intent(context, SignActivity::class.java)
+                    intent.putExtra("kode", 2)
+                    context!!.startActivity(intent)
                 }
 
             }
@@ -94,7 +100,7 @@ class DiskusiFragment : Fragment(), View.OnClickListener, View.OnScrollChangeLis
                 comments
             )
             list.add(listData)
-            progressBarForum.visibility = View.GONE
+            progressBar.dismiss()
 
         }
         adapterForum.notifyDataSetChanged()
@@ -111,10 +117,10 @@ class DiskusiFragment : Fragment(), View.OnClickListener, View.OnScrollChangeLis
                 //Calling method parseData to parse the json response
                 parseData(response)
                 //Hiding the progressbar
-                progressBarForum.visibility = View.GONE
+                progressBar.dismiss()
             },
             Response.ErrorListener {
-                progressBarForum.visibility = View.GONE
+                progressBar.dismiss()
                 //If an error occurs that means end of the list has reached
             })
     }
