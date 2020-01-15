@@ -89,4 +89,6 @@
     <string name="masukan_gambar">Masukan Gambar</string>
     <string name="silahkan_mendaftar_untuk_melanjutkan">Silahkan mendaftar untuk melanjutkan</string>
     <string name="sudah_punya_akun_masuk">Sudah punya akun ? Masuk</string>
+    <string name="komentar">Komentar</string>
+    <string name="kirim">Kirim Komentar</string>
 </resources>

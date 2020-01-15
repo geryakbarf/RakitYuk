@@ -83,10 +83,10 @@ class DiskusiFragment : Fragment(), View.OnClickListener, View.OnScrollChangeLis
             var likes = ob.getString("likes")
             if (likes == "null")
                 likes = "0"
-            var dislikes = "0"
+            var dislikes = ob.getString("dislikes")
             if (dislikes == "null")
                 dislikes = "0"
-            var comments = "0"
+            var comments = ob.getString("comments")
             if (comments == "null")
                 comments = "0"
 
