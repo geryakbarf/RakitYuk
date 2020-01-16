@@ -76,6 +76,7 @@
         <ImageView
             android:layout_marginBottom="16dp"
             android:id="@+id/btnUp"
+            android:tag="like"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="16dp"
@@ -100,6 +101,7 @@
         <ImageView
             android:layout_marginBottom="16dp"
             android:id="@+id/btnDown"
+            android:tag="dislike"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="16dp"

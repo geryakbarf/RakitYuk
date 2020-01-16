@@ -57,6 +57,19 @@ class DetailThreadActivity : AppCompatActivity(), View.OnClickListener,
         btnDown.setOnClickListener(this)
         initialState()
         getDetailThread()
+        swipeRefresh.setOnRefreshListener {
+            val idpost = intent.getStringExtra("idPost")
+            val op = intent.getStringExtra("username")
+            val title = intent.getStringExtra("title")
+            val intent = Intent(applicationContext, DetailThreadActivity::class.java)
+            intent.putExtra("idPost", idpost)
+            intent.putExtra("username", op)
+            intent.putExtra("title", title)
+            startActivity(intent)
+            swipeRefresh.isRefreshing = false
+            finish()
+
+        }
     }
 
     private fun pengecekanLike() {
@@ -369,6 +382,7 @@ class DetailThreadActivity : AppCompatActivity(), View.OnClickListener,
                 statusdis = "null"
 
             val listData = CommentsModels(
+                ob.getString("id"),
                 ob.getString("username"),
                 ob.getString("isi"),
                 ob.getString("tanggal").substring(0, 10),

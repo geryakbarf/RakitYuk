@@ -41,8 +41,6 @@ class AdapterForum(private val list: ArrayList<ForumModels>) :
             intent.putExtra("idPost", id)
             intent.putExtra("username", username)
             intent.putExtra("title", title)
-            intent.putExtra("likes", likes)
-            intent.putExtra("dislikes", dislikes)
             holder.itemView.context.startActivity(intent)
         }
     }

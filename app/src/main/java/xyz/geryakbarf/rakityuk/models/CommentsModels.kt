@@ -1,6 +1,7 @@
 package xyz.geryakbarf.rakityuk.models
 
 data class CommentsModels(
+    var id: String,
     var username: String,
     var isi: String,
     var tanggal: String,
