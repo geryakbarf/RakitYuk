@@ -12,7 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.ReplyActivity"></activity>
+        <activity
+            android:name=".ui.YoutubePlayerActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.TutorialRakitActivty"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.KomponenActivity" />
+        <activity android:name=".ui.SimulasiActivity" />
+        <activity android:name=".ui.ReplyActivity" />
         <activity android:name=".ui.DetailThreadActivity" />
         <activity android:name=".ui.BuatThreadActivity" />
         <activity android:name=".ui.PenjelasanActivity" />

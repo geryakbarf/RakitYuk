@@ -10,7 +10,7 @@ class PenjelasanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.penjelasan_activity)
-        supportActionBar?.title = "Penjelasan Hardware"
+        supportActionBar?.hide()
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.container, PenjelasanFragment())

@@ -10,6 +10,8 @@ import com.synnapps.carouselview.ImageListener
 import kotlinx.android.synthetic.main.fragment_home.*
 import xyz.geryakbarf.rakityuk.R
 import xyz.geryakbarf.rakityuk.ui.PenjelasanActivity
+import xyz.geryakbarf.rakityuk.ui.SimulasiActivity
+import xyz.geryakbarf.rakityuk.ui.TutorialRakitActivty
 
 
 class HomeFragment : Fragment(), View.OnClickListener {
@@ -35,6 +37,8 @@ class HomeFragment : Fragment(), View.OnClickListener {
         btnCpu.setOnClickListener(this)
         btnGpu.setOnClickListener(this)
         btnRam.setOnClickListener(this)
+        btnRakit.setOnClickListener(this)
+        btnTutor.setOnClickListener(this)
     }
 
     private fun moveIntent(kode: Int) {
@@ -49,6 +53,13 @@ class HomeFragment : Fragment(), View.OnClickListener {
             R.id.btnCpu -> moveIntent(1)
             R.id.btnGpu -> moveIntent(2)
             R.id.btnRam -> moveIntent(3)
+            R.id.btnRakit -> {
+                val intent = Intent(context, SimulasiActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btnTutor -> {
+                startActivity(Intent(context, TutorialRakitActivty::class.java))
+            }
         }
     }
 
